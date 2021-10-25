@@ -1,0 +1,21 @@
+﻿<Window x:Class="passwordchecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:passwordchecker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="299*"/>
+            <RowDefinition Height="135*"/>          
+        </Grid.RowDefinitions>
+        <Button x:Name="checkBtn" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="50" Click="checkBtn_Click">
+            Проверить пароль
+        </Button>
+        <PasswordBox x:Name="passwordBox" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="30">
+
+        </PasswordBox>
+    </Grid>
+</Window>
